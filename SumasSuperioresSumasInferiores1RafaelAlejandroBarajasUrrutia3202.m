@@ -1,6 +1,6 @@
 %Fecha: 15 de mayo de 2021.
 %Nombre: Rafael Alejandro Barajas Urrutia.
-%Titulo: Sumas de Riemann.
+%Titulo: 1.3 Sumas de Riemann.
 % f (x) = x^2 + 2 en [1, 4]
 
 syms x
