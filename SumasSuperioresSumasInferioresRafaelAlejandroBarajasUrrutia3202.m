@@ -1,7 +1,7 @@
 %Titulo: Sumas superiores de Riemann.
 %Nombre: Rafael Alejandro Barajas Urrutia.
 %Grupo: 3202.
-%Fecha: 23 de mayo de 2021.
+%Fecha: 23 de junio de 2021.
 %Desarrollar las sumas de las siguientes funciones.
 
 clc
