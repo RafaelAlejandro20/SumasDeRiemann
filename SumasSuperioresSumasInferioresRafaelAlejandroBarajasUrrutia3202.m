@@ -4,6 +4,9 @@
 %Fecha: 23 de mayo de 2021.
 %Desarrollar las sumas de las siguientes funciones.
 
+clc
+clear
+
 function [int]=SumasSuperioresSumasInferioresRafaelAlejandroBarajasUrrutia3202(fun,a,b,m)
   func=inline(fun);
   incx=(b-a)./m;
@@ -15,4 +18,6 @@ function [int]=SumasSuperioresSumasInferioresRafaelAlejandroBarajasUrrutia3202(f
     A =A + abs(incx * (func(a +(i * incx))));
   endfor
   
+  disp('      Sumas superiores de Riemann.')
+  disp('________________________________________');  
   disp(['Riemann Sum Sup: ', num2str(A)]);
