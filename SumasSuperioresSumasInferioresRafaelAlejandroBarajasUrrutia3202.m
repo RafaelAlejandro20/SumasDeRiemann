@@ -1,4 +1,4 @@
-%Titulo: Sumas superiores de Riemann.
+%Titulo: Sumas inferiores de Riemann.
 %Nombre: Rafael Alejandro Barajas Urrutia.
 %Grupo: 3202.
 %Fecha: 23 de mayo de 2021.
@@ -15,9 +15,8 @@ function [int]=SumasSuperioresSumasInferioresRafaelAlejandroBarajasUrrutia3202(f
   
   fplot(fun);
   for i = 1:m
-    A =A + abs(incx * (func(a +(i * incx))));
+    A =A + abs(incx * (func(a -(i * incx))));
   endfor
-  
-  disp('      Sumas superiores de Riemann.')
-  disp('________________________________________');  
-  disp(['Riemann Sum Sup: ', num2str(A)]);
+  disp('      Sumas inferiores de Riemann.')
+  disp('________________________________________');
+  disp(['Riemann Sum Inf: ', num2str(A)]);
