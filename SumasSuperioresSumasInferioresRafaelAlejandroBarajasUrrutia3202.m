@@ -7,7 +7,7 @@
 clc
 clear
 
-function [int]=SumasSuperioresSumasInferioresRafaelAlejandroBarajasUrrutia3202(fun,a,b,m)
+function [int]=SumasSuperioresRafaelAlejandroBarajasUrrutia3202(fun,a,b,m)
   func=inline(fun);
   incx=(b-a)./m;
   x = a:incx:b;
