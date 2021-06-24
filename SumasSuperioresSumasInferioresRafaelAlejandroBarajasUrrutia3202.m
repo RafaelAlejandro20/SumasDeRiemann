@@ -7,7 +7,7 @@
 clc
 clear
 
-function [int]=SumasSuperioresRafaelAlejandroBarajasUrrutia3202(fun,a,b,m)
+function [int]=SumasInferioresRafaelAlejandroBarajasUrrutia3202(fun,a,b,m)
   func=inline(fun);
   incx=(b-a)./m;
   x = a:incx:b;
@@ -15,9 +15,9 @@ function [int]=SumasSuperioresRafaelAlejandroBarajasUrrutia3202(fun,a,b,m)
   
   fplot(fun);
   for i = 1:m
-    A =A + abs(incx * (func(a +(i * incx))));
+    A =A + abs(incx * (func(a -(i * incx))));
   endfor
   
-  disp('      Sumas superiores de Riemann.')
+  disp('      Sumas inferiores de Riemann.')
   disp('________________________________________');  
   disp(['Riemann Sum Sup: ', num2str(A)]);
